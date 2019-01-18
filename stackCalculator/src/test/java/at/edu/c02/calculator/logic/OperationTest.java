@@ -69,4 +69,18 @@ public class OperationTest {
 		
 	}
 	
+	@Test
+	public void testMod() throws CalculatorException {
+		
+		//setup
+		MathOperation sub = new Add();
+		
+		//execute
+		double result = sub.calculate(100,8);
+		
+		//verify
+		assertEquals(4, result, 0.0001);
+		
+	}
+	
 }
