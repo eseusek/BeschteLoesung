@@ -8,6 +8,7 @@ import at.edu.c02.calculator.CalculatorException;
 import at.edu.c02.calculator.MathOperation;
 import at.edu.c02.calculator.logic.operations.Add;
 import at.edu.c02.calculator.logic.operations.Div;
+import at.edu.c02.calculator.logic.operations.Mod;
 import at.edu.c02.calculator.logic.operations.Mul;
 import at.edu.c02.calculator.logic.operations.Sub;
 
@@ -73,7 +74,7 @@ public class OperationTest {
 	public void testMod() throws CalculatorException {
 		
 		//setup
-		MathOperation sub = new Add();
+		MathOperation sub = new Mod();
 		
 		//execute
 		double result = sub.calculate(100,8);
