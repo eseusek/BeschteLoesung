@@ -16,6 +16,8 @@ public class DefaultOperationFactory implements OperationFactory {
 			return new Div();
 		case mul:
 			return new Mul();
+		case mod:
+			return new Mod();
 		}
 
 		return null;
